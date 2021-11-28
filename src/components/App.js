@@ -14,7 +14,7 @@ import { robots } from './Robots';
     }
 
     onSearchChange = (event) => {
-        this.setState({ searchfield: event.target.value });
+        this.setState({ searchfield: event.target.value} );
     }
 
     render (){
