@@ -6,12 +6,17 @@ import './App.css';
 
  class App extends Component {
 
+
     constructor(){
         super()
         this.state = {
-            robots: robots,
+            robots: [],
             searchfield: ''
         }
+    }
+
+    componentDidMount(){
+        console.log(this.state);
     }
 
     onSearchChange = (event) => {
