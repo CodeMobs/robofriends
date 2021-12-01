@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/Card";
 import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
 import "./App.css";
 import axios from "axios";
 
