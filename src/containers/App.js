@@ -19,9 +19,9 @@ const App = () => {
       });
   };
 
-  // this is the function for fetching data for a specific userbased on a url from the second endpoint
+  // This is the function for fetching data for a specific userbased on a url from the second endpoint
   const fetchDataPerUser = async (url) => {
-    // i construct an array  with all the data i get for every user
+    // I construct an array  with all the data i get for every user
     await axios.get(url).then((resp) => finalUserdata.push(resp.data));
   };
 
@@ -39,38 +39,3 @@ const App = () => {
   );
 };
 export default App;
-
-// componentDidMount(){
-//     fetch('https://jsonplaceholder.typicode.com/users')
-//     .then(response => response.json())
-//     .then(users => this.setState({ robots: users }));
-// }
-
-// onSearchChange = (event) => {
-//     this.setState({ searchfield: event.target.value} );
-// }
-
-// render (){
-// const { robots, searchfield } = this.state;
-// const filteredRobots = this.state.robots.filter(robot =>{
-//     return robot.name.toLowerCase().includes(searchfield.toLowerCase());
-// })
-
-// return !robots.length ? <h1>Loading ...</h1> :
-//     (
-//     <div className='tc'>
-//         <h1> RoboFriends </h1>
-//         <div className='search'>
-//             <SearchBox searchChange = {this.onSearchChange} />
-//         </div>
-//         <div>
-//             <Scroll>
-//             <CardList robots = { filteredRobots } />
-//             </Scroll>
-//         </div>
-
-//     </div>
-
-//     );
-//     }
-//   }
