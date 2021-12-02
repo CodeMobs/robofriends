@@ -9,7 +9,7 @@ const Card = ({ name, email, avatarUrl, id }) => {
       {<img alt="robots" src={avatarUrl} />}
       <div>
         <h2>{name}</h2>
-        <p>{email}</p>
+        <h2>{email}</h2>
       </div>
     </div>
   );
