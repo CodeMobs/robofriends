@@ -14,15 +14,15 @@ const App = () => {
       .get(
         "https://api.github.com/search/users?q=language:javascript+type:user&sort=followers&order=desc&page=1&per_page=10"
       )
-      .then((resp) => {
-        setUsers(resp.data.items);
+      .then((response) => {
+        setUsers(response.data.items);
       });
   };
 
   // This is the function for fetching data for a specific userbased on a url from the second endpoint
   const fetchDataPerUser = async (url) => {
     // I construct an array  with all the data i get for every user
-    await axios.get(url).then((resp) => finalUserdata.push(resp.data));
+    await axios.get(url).then((response) => finalUserdata.push(response.data));
   };
 
   useEffect(() => {
