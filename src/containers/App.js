@@ -22,6 +22,7 @@ function App() {
 
   const [robots, setRobots] = useState([]);
   const [searchfield, setSearchField] = useState("");
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
