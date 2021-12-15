@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import Button from "../components/Button";
 //import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
 
@@ -31,6 +32,10 @@ function App() {
         setRobots(users);
       });
   }, []);
+
+  const onClickEvent = () => {
+    setCount(count + 1);
+  };
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
